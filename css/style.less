@@ -182,7 +182,7 @@
             width: 100%;
         }
         button {
-            margin-top: 1rem;
+            margin-top: 0.3rem;
         }
     }
 }
@@ -212,20 +212,31 @@
         display: flex;
         justify-content: center;
         text-align: center;
+        p {
+            color: #f7f7f7;
+            font-family: Sansation;
+            font-size: 1rem;
+            line-height: 18px;
+        }
+        h2 {
+            margin-top: 1rem;
+            color: #f7f7f7;
+            font-family: Sansation;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
         &-1 {
             img {
                 margin-top: 10rem;
             }
-            h2 {
-                margin-top: 1rem;
-                color: #f7f7f7;
-                font-family: Sansation;
-                font-size: 1.3rem;
-                font-weight: 700;
-                text-transform: uppercase;
-            }
+            
+            
             flex: 1;
             background-color: #3d3d3d;
+            &:hover {
+                background-color: lighten(#3d3d3d, 5%)
+            }
         }
         &-2{
             img {
@@ -233,13 +244,8 @@
             }
             flex: 1;
             background-color: #097e89;
-            h2 {
-                margin-top: 1rem;
-                color: #f7f7f7;
-                font-family: Sansation;
-                font-size: 1.3rem;
-                font-weight: 700;
-                text-transform: uppercase;
+            &:hover {
+                background-color: lighten(#097e89, 5%)
             }
         }
         &-3 {
@@ -248,13 +254,8 @@
             }
             flex: 1;
             background-color: #3d3d3d;
-            h2 {
-                margin-top: 1rem;
-                color: #f7f7f7;
-                font-family: Sansation;
-                font-size: 1.3rem;
-                font-weight: 700;
-                text-transform: uppercase;
+            &:hover {
+                background-color: lighten(#3d3d3d, 5%)
             }
         }
         button {
@@ -321,9 +322,15 @@
             &-3 {
                 flex: 1;
             }
+            margin-bottom: 4rem;
         }
     }
     &-two {
+        img {
+            &:hover {
+                border: 1px solid gold
+            }
+        }
         margin-top: 3rem;
         flex: 2;
         display: flex;
@@ -337,13 +344,14 @@
         &-img3 {
             flex: 1;   
         }
-
+        
     }
 }
 
 // Clients section
 
 .clients {
+    margin-top: 2.1rem;
     background-color: #fefefe;
     &-text {
         color: #656464;
@@ -360,6 +368,7 @@
 
 .brands {
     margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -380,20 +389,126 @@
         }
     }
     &-2 {
-        margin-top: 4rem;
         flex:1;
         display: flex;
         &-1 {
+            margin-top: 3.4rem;
             flex: 1;
         }
         &-2 {
+            margin-top: 4rem;
             flex: 1;
         }
         &-3 {
+            margin-top: 2.6rem;
+            
             flex: 1;
         }
         &-4 {
+            margin-top: 3.5rem;
             flex: 1;
         }
+    }
+}
+// Section Queries
+
+.queries {
+    text-align: center;
+    display: flex;
+    &-oneblock {
+        h2 {
+            padding: 1.2rem 0;
+            flex: 100;
+            text-align: center;
+            color: #000;
+            font-family: Sansation;
+            font-size: 2rem;
+            text-transform: uppercase; 
+        }
+    }
+}
+
+// Section Queries
+
+.queries {
+    background-color: #097e89;
+    display: flex;
+    &-oneblock {
+        margin-top: 1rem;
+        margin-left: 2rem;
+        text-align: left;
+        h2 {
+            text-align: left;
+            color: #ffffff;
+            font-family: Sansation;
+            font-size: 1.5rem;
+        }
+        p {
+            opacity: 0.8;
+            color: #ffffff;
+            font-family: Sansation;
+            font-size: 0.85rem;
+        }
+        flex: 3;
+    }
+    &-secondblock {
+        flex: 4;
+        &-form {
+            margin-top: 4rem;
+            display: flex;
+            input {
+                padding: 0.3rem 0.3rem;
+                border: 1px solid lighten(#097e89, 50%);
+                background-color: transparent;
+                color: lighten(#097e89, 70%);
+                font-family: Sansation;
+                font-size: 1.3r;
+                &:focus {
+                    outline: none;
+                }
+            }
+            &-1 {
+                input {
+                    border-right: none;
+                }
+                
+            }
+            &-2 {
+
+            }
+            &-3 {
+                input{
+                    padding: 0.3rem 2rem;
+                    border: 1px solid lighten(#097e89, 50%);
+                    background-color: transparent;
+                    color: lighten(#097e89, 70%);
+                    font-family: Sansation;
+                    font-size: 1.3r;
+                    &:focus {
+                        outline: none;
+                    }
+                    &:active {
+                       background-color: darken(#097e89, 5%);
+                    }
+                }
+            }
+        }
+        margin-bottom: 5rem;
+    }
+}
+
+// contacts section
+
+.contacts {
+    display: flex;
+    &-product {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+    }
+    &-learn {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
     }
 }

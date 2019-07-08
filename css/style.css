@@ -165,7 +165,7 @@
   width: 100%;
 }
 .about-text button {
-  margin-top: 1rem;
+  margin-top: 0.3rem;
 }
 .our {
   background-color: #373737;
@@ -188,6 +188,20 @@
   justify-content: center;
   text-align: center;
 }
+.web-content p {
+  color: #f7f7f7;
+  font-family: Sansation;
+  font-size: 1rem;
+  line-height: 18px;
+}
+.web-content h2 {
+  margin-top: 1rem;
+  color: #f7f7f7;
+  font-family: Sansation;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 .web-content-1 {
   flex: 1;
   background-color: #3d3d3d;
@@ -195,13 +209,8 @@
 .web-content-1 img {
   margin-top: 10rem;
 }
-.web-content-1 h2 {
-  margin-top: 1rem;
-  color: #f7f7f7;
-  font-family: Sansation;
-  font-size: 1.3rem;
-  font-weight: 700;
-  text-transform: uppercase;
+.web-content-1:hover {
+  background-color: #4a4a4a;
 }
 .web-content-2 {
   flex: 1;
@@ -210,13 +219,8 @@
 .web-content-2 img {
   margin-top: 10rem;
 }
-.web-content-2 h2 {
-  margin-top: 1rem;
-  color: #f7f7f7;
-  font-family: Sansation;
-  font-size: 1.3rem;
-  font-weight: 700;
-  text-transform: uppercase;
+.web-content-2:hover {
+  background-color: #0b94a1;
 }
 .web-content-3 {
   flex: 1;
@@ -225,13 +229,8 @@
 .web-content-3 img {
   margin-top: 10rem;
 }
-.web-content-3 h2 {
-  margin-top: 1rem;
-  color: #f7f7f7;
-  font-family: Sansation;
-  font-size: 1.3rem;
-  font-weight: 700;
-  text-transform: uppercase;
+.web-content-3:hover {
+  background-color: #4a4a4a;
 }
 .web-content button {
   margin-bottom: 10rem;
@@ -278,6 +277,7 @@
   display: flex;
   flex: 1;
   justify-content: space-between;
+  margin-bottom: 4rem;
 }
 .fcontent-one-pages-1 {
   flex: 1;
@@ -297,6 +297,9 @@
   display: flex;
   justify-content: space-between;
 }
+.fcontent-two img:hover {
+  border: 1px solid gold;
+}
 .fcontent-two-img1 {
   flex: 1;
 }
@@ -307,6 +310,7 @@
   flex: 1;
 }
 .clients {
+  margin-top: 2.1rem;
   background-color: #fefefe;
 }
 .clients-text {
@@ -320,6 +324,7 @@
 }
 .brands {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -341,19 +346,106 @@
   flex: 1;
 }
 .brands-2 {
-  margin-top: 4rem;
   flex: 1;
   display: flex;
 }
 .brands-2-1 {
+  margin-top: 3.4rem;
   flex: 1;
 }
 .brands-2-2 {
+  margin-top: 4rem;
   flex: 1;
 }
 .brands-2-3 {
+  margin-top: 2.6rem;
   flex: 1;
 }
 .brands-2-4 {
+  margin-top: 3.5rem;
   flex: 1;
+}
+.queries {
+  text-align: center;
+  display: flex;
+}
+.queries-oneblock h2 {
+  padding: 1.2rem 0;
+  flex: 100;
+  text-align: center;
+  color: #000;
+  font-family: Sansation;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.queries {
+  background-color: #097e89;
+  display: flex;
+}
+.queries-oneblock {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  text-align: left;
+  flex: 3;
+}
+.queries-oneblock h2 {
+  text-align: left;
+  color: #ffffff;
+  font-family: Sansation;
+  font-size: 1.5rem;
+}
+.queries-oneblock p {
+  opacity: 0.8;
+  color: #ffffff;
+  font-family: Sansation;
+  font-size: 0.85rem;
+}
+.queries-secondblock {
+  flex: 4;
+  margin-bottom: 5rem;
+}
+.queries-secondblock-form {
+  margin-top: 4rem;
+  display: flex;
+}
+.queries-secondblock-form input {
+  padding: 0.3rem 0.3rem;
+  border: 1px solid #99f0f8;
+  background-color: transparent;
+  color: #f8feff;
+  font-family: Sansation;
+  font-size: 1.3r;
+}
+.queries-secondblock-form input:focus {
+  outline: none;
+}
+.queries-secondblock-form-1 input {
+  border-right: none;
+}
+.queries-secondblock-form-3 input {
+  padding: 0.3rem 2rem;
+  border: 1px solid #99f0f8;
+  background-color: transparent;
+  color: #f8feff;
+  font-family: Sansation;
+  font-size: 1.3r;
+}
+.queries-secondblock-form-3 input:focus {
+  outline: none;
+}
+.queries-secondblock-form-3 input:active {
+  background-color: #076871;
+}
+.contacts {
+  display: flex;
+}
+.contacts-product {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.contacts-learn {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
 }
